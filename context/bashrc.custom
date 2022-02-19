@@ -1,0 +1,14 @@
+PS1="[\u@\h:\w]\n$ "
+
+umask 027
+
+export SHELL=/bin/bash
+export LS_OPTIONS='--color=auto --time-style=long-iso'
+
+eval "`dircolors`"
+
+alias ls='ls $LS_OPTIONS'
+alias lt='ls $LS_OPTIONS -ltr'
+alias ll='ls $LS_OPTIONS -l'
+alias la='ls $LS_OPTIONS -lA'
+alias lta='ls $LS_OPTIONS -ltrA'
