@@ -5,12 +5,12 @@ A lightly customized Ubuntu Linux image that serves as the base image for my dow
 ## How to obtain and use this image
 
 1. Clone this repo
-1. [Build the image](#building-the-image)
+1. [Manually building the image](#building-the-image)
     1. [For MacOS and Linux](#method-1)
     1. [For Windows](#method-2)
 1. [Run the image](#run-the-image) or use as base image for another image
 
-## Building the image
+## Manually building the image
 
 The following two build methods will create a Docker image with the latest rolling release of Ubuntu with latest updates applied. The image will be labelled `kristinjeanna/ubuntu:latest` and can be used to construct downstream images.
 
@@ -43,4 +43,3 @@ docker run -ti --rm kristinjeanna/ubuntu
 ## See also
 
 * [tini](https://github.com/krallin/tini) init
-* [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
