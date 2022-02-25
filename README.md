@@ -1,6 +1,6 @@
 # kristinjeanna-ubuntu
 
-A lightly customized Ubuntu Linux image that serves as the base image for my downstream Ubuntu-based Docker images. Includes `tini` as the PID 0 process (i.e., image entrypoint).
+A Docker image based on `ubuntu:rolling` that serves as the base image for my downstream Ubuntu-based Docker images. Includes `tini` as the PID 0 process.
 
 ## How to obtain and use this image
 
