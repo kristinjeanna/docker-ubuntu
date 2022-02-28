@@ -11,4 +11,4 @@ docker build \
     --no-cache \
     -t ${label} \
     -f Dockerfile \
-    context
+    .
