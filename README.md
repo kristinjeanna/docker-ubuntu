@@ -1,45 +1,67 @@
 # kristinjeanna-ubuntu
 
-A Docker image based on `ubuntu:rolling` that serves as the base image for my downstream Ubuntu-based Docker images. Includes `tini` as the PID 0 process.
+[![GitHub license](https://img.shields.io/github/license/kristinjeanna/docker-ubuntu.svg?style=flat)](https://github.com/kristinjeanna/docker-ubuntu/blob/master/LICENSE) [![Latest Docker tag](https://img.shields.io/docker/v/kristinjeanna/ubuntu/latest?style=flat)](https://hub.docker.com/repository/docker/kristinjeanna/ubuntu) ![Last commit](https://img.shields.io/github/last-commit/kristinjeanna/docker-ubuntu?style=flat)
 
-## How to obtain and use this image
+A Docker image based on `ubuntu:rolling` that serves as the base image for my downstream Ubuntu-based Docker images. Includes `tini` as the PID 0 process and runs as a user named "default".
 
-1. Clone this repo
-1. [Manually building the image](#building-the-image)
-    1. [For MacOS and Linux](#method-1)
-    1. [For Windows](#method-2)
-1. [Run the image](#run-the-image) or use as base image for another image
+- [Requirements](#requirements)
+- [How to obtain the image](#how-to-obtain-the-image)
+  - [Pull from Docker Hub](#pull-from-docker-hub)
+  - [Manually building the image](#manually-building-the-image)
+    - [Method 1](#method-1)
+    - [Method 2](#method-2)
+- [Run the image](#run-the-image)
+- [See also](#see-also)
 
-## Manually building the image
+## Requirements
 
-The following two build methods will create a Docker image with the latest rolling release of Ubuntu with latest updates applied. The image will be labelled `kristinjeanna/ubuntu:latest` and can be used to construct downstream images.
+- [Docker](https://www.docker.com/get-started)
 
-### Method 1
+## How to obtain the image
 
-For use on a MacOS or Linux system. At a bash prompt, `cd` to the source directory of the cloned repo, and build with:
+### Pull from Docker Hub
 
+```shell
+docker pull kristinjeanna/ubuntu
 ```
+
+### Manually building the image
+
+First, clone this repo. Then, use one of the following two methods to create the Docker image. The image will be labelled `kristinjeanna/ubuntu:latest` and can be used to construct downstream images.
+
+#### Method 1
+
+At a command prompt, `cd` to the source directory of the cloned repo, and build with:
+
+```shell
 ./build.sh
 ```
 
 This script will scrub a previous `kristinjeanna/ubuntu` image prior to performing the build.
 
-### Method 2
+#### Method 2
 
-For building on a Windows system running Docker. In a command prompt, `cd` to the source directory of the cloned repo, and build with:
+At a command prompt, `cd` to the source directory of the cloned repo, and build with:
 
-```
-docker build -t kristinjeanna/ubuntu -f Dockerfile context
+```shell
+docker build -t kristinjeanna/ubuntu -f Dockerfile .
 ```
 
 ## Run the image
 
 The following runs the image and results in a bash prompt in the running container:
 
-```
+```shell
 docker run -ti --rm kristinjeanna/ubuntu
+```
+
+By default, the image runs as a user named "default". To run as root, add `--user=root` to the command:
+
+```shell
+docker run -ti --rm --user=root kristinjeanna/ubuntu
 ```
 
 ## See also
 
-* [tini](https://github.com/krallin/tini) init
+- [`kristinjeanna/ubuntu` on Docker Hub](https://hub.docker.com/repository/docker/kristinjeanna/ubuntu)
+- [tini](https://github.com/krallin/tini) init
