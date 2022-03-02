@@ -1,6 +1,6 @@
 # kristinjeanna-ubuntu
 
-[![GitHub license](https://img.shields.io/github/license/kristinjeanna/docker-ubuntu.svg?style=flat)](https://github.com/kristinjeanna/docker-ubuntu/blob/master/LICENSE) [![Latest Docker tag](https://img.shields.io/docker/v/kristinjeanna/ubuntu/latest?style=flat)](https://hub.docker.com/repository/docker/kristinjeanna/ubuntu) ![Last commit](https://img.shields.io/github/last-commit/kristinjeanna/docker-ubuntu?style=flat)
+[![GitHub license](https://img.shields.io/github/license/kristinjeanna/docker-ubuntu.svg?style=flat)](https://github.com/kristinjeanna/docker-ubuntu/blob/main/LICENSE) [![Latest Docker tag](https://img.shields.io/docker/v/kristinjeanna/ubuntu/latest?style=flat)](https://hub.docker.com/repository/docker/kristinjeanna/ubuntu) ![Last commit](https://img.shields.io/github/last-commit/kristinjeanna/docker-ubuntu?style=flat)
 
 A Docker image based on `ubuntu:rolling` that serves as the base image for my downstream Ubuntu-based Docker images. Includes `tini` as the PID 0 process and runs as a user named "default".
 
