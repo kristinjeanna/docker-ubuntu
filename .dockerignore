@@ -1,4 +1,8 @@
 .DS_Store
-README.md
-build.sh
+.git/
+.gitignore
+.gitattributes
+*.md
 LICENSE
+.gitignore
+build.sh
