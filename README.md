@@ -1,4 +1,4 @@
-# kristinjeanna-ubuntu
+# kristinjeanna/docker-ubuntu
 
 [![GitHub license](https://img.shields.io/github/license/kristinjeanna/docker-ubuntu.svg?style=flat)](https://github.com/kristinjeanna/docker-ubuntu/blob/main/LICENSE) [![Latest Docker tag](https://img.shields.io/docker/v/kristinjeanna/ubuntu/latest?style=flat)](https://hub.docker.com/repository/docker/kristinjeanna/ubuntu) ![Last commit](https://img.shields.io/github/last-commit/kristinjeanna/docker-ubuntu?style=flat)
 
