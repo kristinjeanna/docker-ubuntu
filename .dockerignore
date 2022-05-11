@@ -5,5 +5,4 @@ Icon?
 .gitattributes
 *.md
 LICENSE
-.gitignore
 build.sh
