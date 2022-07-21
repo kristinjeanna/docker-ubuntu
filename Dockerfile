@@ -1,4 +1,4 @@
-FROM ubuntu:rolling AS final
+FROM ubuntu:22.04 AS final
 
 # copy the contents of the context/ directory to the image
 COPY ./bashrc.custom /tmp/
