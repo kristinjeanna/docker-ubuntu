@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/kristinjeanna/docker-ubuntu.svg?style=flat)](https://github.com/kristinjeanna/docker-ubuntu/blob/main/LICENSE) [![Latest Docker tag](https://img.shields.io/docker/v/kristinjeanna/ubuntu/latest?style=flat)](https://hub.docker.com/repository/docker/kristinjeanna/ubuntu) ![Last commit](https://img.shields.io/github/last-commit/kristinjeanna/docker-ubuntu?style=flat)
 
-A Docker image based on `ubuntu:22.04` that serves as the base image for my downstream Ubuntu-based Docker images. Includes `tini` as the PID 0 process and runs as a user named "default".
+A Docker image based on `ubuntu:23.04` that serves as the base image for my downstream Ubuntu-based Docker images. Includes `tini` as the PID 0 process and runs as a user named "default".
 
 - [Requirements](#requirements)
 - [How to obtain the image](#how-to-obtain-the-image)
